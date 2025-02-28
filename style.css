@@ -475,3 +475,22 @@
       color: red; opacity: .8;
     }
   }c
+body {
+    background-color: #ffb6c1; /* Màu hồng pastel */
+    overflow: hidden; /* Tránh thanh cuộn khi tuyết rơi */
+}
+
+.snowflake {
+    position: fixed;
+    top: -10px;
+    color: white;
+    font-size: 12px;
+    user-select: none;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+    }
+}
